@@ -81,14 +81,21 @@ The notebook generates:
 - **Top-N products & categories plots**  
 
 ---
-
-## 🚀 Resume-Ready Impact
-- Analyzed **550K+ Black Friday sales records** to extract **business-critical insights**  
-- Found **City B generates 41.5% of revenue** and **older cohorts spend ~6.7% more**  
-- Identified **top 5 occupations driving ~52.5% of sales**  
-- Verified **no strong linear predictors (|r| < 0.07)**, guiding toward non-linear ML models  
-- Delivered **visual-first, actionable insights** for retail strategy  
+## 🛠️ Tech Stack
+- **Python** → Pandas, NumPy  
+- **Visualization** → Matplotlib, Seaborn  
+- **Environment** → Jupyter Notebook 
 
 ---
 
-## 📂 Repository Structure
+---
+
+## ⚙️ Installation & Usage
+
+Clone the repository:
+```bash
+git clone https://github.com/G-Monesh-Reddy/EDA-BLACK-FRIDAY.git
+cd EDA-BLACK-FRIDAY
+
+
+
