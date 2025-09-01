@@ -1,102 +1,101 @@
 🛍️ Black Friday Sales – Exploratory Data Analysis (EDA)
+
 📌 Project Overview
 
-This project explores the Black Friday Sales Dataset from Kaggle to understand customer purchase behavior across demographics, occupations, and product categories.
-Using Exploratory Data Analysis (EDA), we identify key spending patterns, revenue drivers, and segment-level insights.
+The Black Friday Sales Dataset is one of Kaggle’s most popular datasets for learning EDA and feature engineering.
+This project dives into 550K+ customer transactions to answer key business questions such as:
 
-The findings support:
+Which cities, occupations, and age groups drive the most revenue?
 
-Business insights → identifying top cities, occupations, and product categories driving sales.
+Do marital status or city tenure influence customer spending?
 
-Customer segmentation → profiling high-value cohorts based on age, tenure, and city.
+Which products and categories are most popular?
 
-Modeling guidance → understanding correlations and preparing features for ML tasks.
+How strong are the correlations between demographics and purchase amount?
 
-📊 Dataset Details
+The analysis blends business insights with data storytelling and prepares the ground for predictive modeling and customer segmentation.
 
-Source: Black Friday Sales Dataset – Kaggle
+📊 Dataset Information
 
-Records: ~550,000+ purchase transactions
+Source: Black Friday Sales – Kaggle
+
+Records: ~550,000
 
 Features:
 
-User Demographics → User_ID, Gender, Age, Marital_Status, Occupation, City_Category, Stay_In_Current_City_Years
+🧑 Demographics → Gender, Age, Marital_Status, Occupation, City_Category, Stay_In_Current_City_Years
 
-Product Information → Product_ID, Product_Category_1/2/3
+📦 Products → Product_ID, Product_Category_1/2/3
 
-Target Variable → Purchase (amount spent per transaction)
+💰 Target Variable → Purchase (spending amount per transaction)
 
 🔍 Methodology
 
-Data Cleaning & Encoding → handled missing values, categorical conversion.
+Data Cleaning & Encoding → managed missing values, standardized categories.
 
-Univariate Analysis → examined purchase distribution, age, city, and occupation breakdowns.
+Univariate Analysis → purchase distributions, categorical breakdowns.
 
-Bivariate Analysis → cross-tabulated purchase values with demographics.
+Bivariate Analysis → impact of demographics on spending.
 
-Correlation Heatmap → studied linear relationships between encoded features.
+Top-N Analysis → most valuable customers, products, and categories.
 
-Top-N Analysis → highlighted high-revenue products and categories.
+Correlation Study → heatmap of feature–target relationships.
 
-📈 Key Insights (From Visuals)
-🌆 City-Wise Purchases
+📈 Key Findings
+🌆 City Contribution
 
-City B dominates with ~41.5% of total sales revenue.
+City B → 41.5% of total revenue (dominant market).
 
-Cities C (~32.7%) and A (~25.8%) follow.
-➡️ City B is the primary market driver during Black Friday sales.
+Cities C (32.7%) and A (25.8%) follow.
 
-🏠 Customer Tenure
+🏠 Tenure in Current City
 
-1-year residents generated ~35.2% of revenue.
+1-year residents → ~35.2% of revenue volume.
 
-2-year residents have the highest avg order value (~₹9,320), slightly higher than others.
-➡️ Short-stay customers drive volume, mid-stay customers drive value.
+2-year residents → highest avg purchase (~₹9,320).
 
-👥 Age Groups
+👥 Age Influence
 
-Older cohorts spend more: Age code 5 avg = ₹9,535 vs. code 0 avg = ₹8,933.
+Older groups spend more: Age code 5 avg = ₹9,535 vs. code 0 avg = ₹8,933.
 
-Spending grows ~6.7% between youngest and older cohorts.
-➡️ Mature customers show higher purchasing power.
+~6.7% increase between youngest and older cohorts.
 
 💍 Marital Status
 
-Minimal difference: Married (₹9,261) vs. Unmarried (₹9,266).
-➡️ Marital status has negligible effect on spending.
+Negligible impact: Married vs. Unmarried differ by only ₹4.7 on avg purchase.
 
 💼 Occupation
 
-Top 5 occupations (codes 4, 0, 7, 1, 17) = ~52.5% of revenue.
-➡️ Half the sales are concentrated in a few professional groups.
+Top 5 occupation codes (4, 0, 7, 1, 17) = ~52.5% of revenue.
 
 📦 Product Categories
 
-Category 1: IDs 10, 9, 15 are most common.
+Category 1 → 10, 9, 15 dominate.
 
-Category 2: IDs 15, 16, 13 dominate.
+Category 2 → 15, 16, 13 dominate.
 
-Category 3: IDs 16, 17, 13 lead.
-➡️ Purchases cluster around a few product categories.
+Category 3 → 16, 17, 13 dominate.
 
-🛍️ Top Products
+🛍️ Products
 
-Top SKU (P00025442) generated ~₹28M.
+Top SKU P00025442 → ₹28M sales.
 
-Top 5 SKUs ≈ ₹128.5M (~2.5% of total sales).
-➡️ A few products show outsized popularity, but sales are distributed overall.
+Top 5 SKUs ≈ ₹128.5M (~2.5% of sales).
 
-📉 Correlation Insights
+📉 Correlation
 
-No strong linear predictors of purchase (all |r| < 0.07).
-➡️ Customer spending is segment-driven, not purely linear.
+No strong linear predictors (all |r| < 0.07).
 
-🖥️ Visual Outputs
+Spending patterns are segment-driven, not purely linear.
 
-Bar charts → Purchases by city, age, occupation, tenure.
+📊 Visual Gallery
 
-Histograms → Purchase distribution.
+Some of the key plots generated in the notebook:
 
-Heatmap → Feature correlations.
+Purchases by City, Age, Occupation, Tenure
 
-Top-N plots → Products and categories.
+Histograms of purchase distribution
+
+Heatmap for correlation analysis
+
+Top-N products & categories
